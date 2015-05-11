@@ -1,0 +1,54 @@
+".authContainer": {
+	backgroundColor: "#fff"
+}
+
+"#sv": {
+  height: Ti.UI.FILL,
+  width: Ti.UI.FILL
+}
+
+"#authHeader": {
+  color: "#333",
+  font: {
+    fontSize: 20
+   },
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  top: 40
+}
+
+"TextField": {
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	left: 10,
+	width: 300,
+	height: 35,
+	color: '#333'
+}
+
+"#x_card_num": {
+  top: 70,
+  hintText: "Credit Card Number"
+}
+
+"#x_card_code": {
+  top: 110,
+  hintText: "CCV"
+}
+
+"#x_exp_date": {
+  top: 150,
+  hintText: "Exp. Date"
+}
+
+"#x_amount": {
+  top: 190,
+  hintText: "Amount"
+}
+
+"#authSubmitButton": {
+  top: 260,
+  height: 30,
+  color: "#888",
+  font: {
+    fontSize: 20
+  }
+}

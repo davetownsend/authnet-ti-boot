@@ -1,0 +1,54 @@
+buildscript {
+  repositories {
+    maven { url 'http://repo.springsource.org/libs-snapshot' }
+    mavenLocal()
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:$bootVersion")
+  }
+}
+
+apply plugin: 'spring-boot'
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+  maven { url 'http://repo.springsource.org/libs-snapshot' }
+}
+
+dependencies {
+  compile "org.springframework.boot:spring-boot-starter-web:$bootVersion"
+  compile "org.springframework.boot:spring-boot-starter-actuator:$bootVersion"
+  compile "org.springframework.boot:spring-boot-starter-remote-shell:$bootVersion"
+  compile "org.springframework.boot:spring-boot-starter-tomcat:$bootVersion"
+  compile 'com.fasterxml.jackson.core:jackson-databind'
+  compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+  compile 'net.authorize:anet-java-sdk:1.8.1'
+
+
+  testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+  testCompile 'org.spockframework:spock-spring'
+  testCompile "org.springframework.boot:spring-boot-starter-test:$bootVersion"
+  testCompile('org.codehaus.groovy.modules.http-builder:http-builder:0.7+') {
+    exclude module: "commons-logging"
+    exclude module: "xml-apis"
+    exclude module: "groovy"
+  }
+}
+
+
+jar {
+  baseName = 'boot'
+  version = '0.0.1'
+  into('lib') {
+    from 'lib'
+  }
+}
+
+
+task(type: Wrapper) {
+  gradleVersion = "$gradleVersion"
+}

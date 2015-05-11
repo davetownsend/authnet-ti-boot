@@ -1,0 +1,11 @@
+---
+applications:
+- name: authnet-boot
+  memory: 512M
+  instances: 1
+  path: build/libs/boot-0.0.1.jar
+  timeout: 180
+  host: authnet-boot
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom

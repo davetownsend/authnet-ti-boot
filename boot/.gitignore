@@ -1,0 +1,10 @@
+.DS_Store
+build
+classes
+.idea
+.yo-rc.json
+.gradle
+*.iml
+logs/
+gradle/
+.gradle

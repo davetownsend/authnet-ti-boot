@@ -1,0 +1,12 @@
+<Alloy>
+  <Window class="authContainer">
+    <ScrollView id="sv">
+      <Label id="authHeader">Authnet AUTH</Label>
+      <TextField id="x_card_num" />
+      <TextField id="x_card_code" />
+      <TextField id="x_exp_date" />
+      <TextField id="x_amount" />
+    </ScrollView>
+    <Button id="authSubmitButton">Submit Auth</Button>
+  </Window>
+</Alloy>

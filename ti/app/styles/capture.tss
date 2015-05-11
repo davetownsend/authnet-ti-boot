@@ -1,0 +1,39 @@
+".captureContainer": {
+	backgroundColor: "#fff"
+}
+
+"#captureHeader": {
+  color: "#333",
+  font: {
+    fontSize: 20
+   },
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  top: 40
+}
+
+"#captureSubmitButton": {
+  top: 200,
+  height: 30,
+  color: "#888",
+  font: {
+    fontSize: 20
+  }
+}
+
+"#captureSuccessLabel": {
+  color: "#3F8CF1",
+  font: {
+    fontSize: 20
+   },
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  top: 260
+}
+
+"#captureCloseButton": {
+  top: 320,
+  height: 30,
+  color: "#000",
+  font: {
+    fontSize: 20
+  }
+}

@@ -1,0 +1,8 @@
+<Alloy>
+  <Window class="captureContainer">
+    <Label id="captureHeader">Authnet Capture</Label>
+    <Button id="captureSubmitButton">Submit Capture</Button>
+    <Label id="captureSuccessLabel">Capture Successful!</Label>
+    <Button id="captureCloseButton">Close</Button>
+  </Window>
+</Alloy>
